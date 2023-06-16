@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Icons } from "./Icons";
+import UserAuthForm from "./UserAuthForm";
 
 const SignIn = () => {
 	return (
@@ -11,17 +12,17 @@ const SignIn = () => {
 					By continuing, you are setting up a Breadit account and agree to our
 					User Agreement and Privacy Policy.
 				</p>
-
-				<p className="px-8 text-center text-sm text-zinc-700">
-					New to Breadit?{" "}
-					<Link
-						href="/sign-up"
-						className="hover:text-brand text-sm underline underline-offset-4"
-					>
-						Sign Up
-					</Link>
-				</p>
 			</div>
+			<UserAuthForm />
+			<p className="px-8 text-center text-sm text-zinc-700">
+				New to Breadit?{" "}
+				<Link
+					href="/sign-up"
+					className="hover:text-brand text-sm underline underline-offset-4"
+				>
+					Sign Up
+				</Link>
+			</p>
 		</div>
 	);
 };
